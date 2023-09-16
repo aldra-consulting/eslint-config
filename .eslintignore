@@ -1,0 +1,16 @@
+.DS_Store
+
+.github
+.husky
+.vscode
+
+.gitignore
+.editorconfig
+.eslintignore
+
+lib
+node_modules
+
+!.*.json
+
+package-lock.json
