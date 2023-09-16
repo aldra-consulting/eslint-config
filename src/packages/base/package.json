@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@aldra-consulting/eslint-config-base",
+  "version": "1.0.0",
+  "description": "Shareable base ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aldra-consulting/eslint-config.git"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Zakharov (azaxarov)",
+      "email": "alexander.zakharov@aldra.no"
+    }
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s --npm-path npm clean compile",
+    "clean": "run-p clean:lib",
+    "clean:lib": "rimraf lib",
+    "compile": "tsc --build",
+    "prepublishOnly": "run-s --npm-path npm build"
+  },
+  "peerDependencies": {
+    "eslint": "^8",
+    "eslint-config-airbnb-base": "^15",
+    "eslint-plugin-import": "^2"
+  }
+}
