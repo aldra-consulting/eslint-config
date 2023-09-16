@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@aldra-consulting/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "Shareable TypeScript ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aldra-consulting/eslint-config.git"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Zakharov (azaxarov)",
+      "email": "alexander.zakharov@aldra.no"
+    }
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "run-s --npm-path npm clean compile",
+    "clean": "run-p clean:lib",
+    "clean:lib": "rimraf lib",
+    "compile": "tsc --build",
+    "prepublishOnly": "run-s --npm-path npm build"
+  },
+  "dependencies": {
+    "@aldra-consulting/eslint-config-base": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "eslint": "^8",
+    "eslint-config-airbnb-base": "^15",
+    "eslint-import-resolver-typescript": "^3",
+    "eslint-plugin-deprecation": "^2",
+    "eslint-plugin-import": "^2",
+    "typescript": "^5"
+  }
+}
