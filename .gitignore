@@ -2,6 +2,7 @@
 
 .vscode
 .idea
+.nx
 
 lib
 node_modules
