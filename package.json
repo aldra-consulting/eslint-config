@@ -15,8 +15,8 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": ">=18",
-    "npm": ">=9"
+    "node": ">=22",
+    "npm": ">=11"
   },
   "workspaces": [
     "src/packages/*"
