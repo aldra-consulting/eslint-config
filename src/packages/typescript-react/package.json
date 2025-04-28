@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@aldra-consulting/eslint-config-typescript-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shareable TypeScript React ESLint configuration.",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "dependencies": {
-    "@aldra-consulting/eslint-config-typescript": "^1.0.1"
+    "@aldra-consulting/eslint-config-typescript": "^1.0.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^6",
